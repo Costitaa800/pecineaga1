@@ -1,0 +1,108 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos principales */
+
+html {
+    font-family:monospace;
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+    color: greenyellow;
+}
+
+h1,
+h2 {
+    margin: 20px 0px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0px;
+}
+
+/*  BOX MODOEL VISUAL */
+.box-model{
+    margin-bottom: 30px;
+}
+
+.content{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #3498bd;
+    margin: 5px;
+    background-color: #101010;
+    text-align: center;
+}
+
+/* CONTENT-BOX VS BORDER-BOX */
+.content-box{
+    box-sizing: content-box; /* Valor pr defecto */
+    /* Ancho total =width + border-width + padding-width */
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    margin-bottom: 20px;
+    background-color: #897d7d;
+}
+
+.border-box{
+    box-sizing: border-box;
+    /* Ancho total : 200px (incluye todo ) adapta el contenido.*/
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    margin-bottom: 20px;
+    background-color: #897d7d;
+}
+
+/* MARGIN COLLAPSE*/
+/* Es cuando el margen de dos elementos adyadcentes se solapan.Suele ser provocado cuando los elementos tienen display: block; */
+.margin-box-1{
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #999;
+}
+
+.margin-box{
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #999;
+}
+
+/* PADDING VS MARGIN */
+.only-padding{
+    padding: 30px;
+    background-color: #3496bd;
+    color: white;
+}
+
+
+.only-margin{
+    margin: 30px;
+    background-color: #e74c3c;
+    color: white;
+}
+
+/*===============
+BOX MODEL:
+
+CONTENT-> El contenido
+PADDING-> El espacio interior
+BORDER-> El borde
+MARGIN-> Espacio exterior
+
+box-sizing:
+-content-box (default) suma todos los valores
+-border-box (recomendado) ancho real

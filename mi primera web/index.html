@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <!--Estilos en el head del html
+
+    <style>
+    p {
+    padding: 5px;
+    background-color: aqua;
+
+    } 
+    h3 {
+        color: cadetblue;
+        background-color: black;
+        padding: 5px;
+    }
+    
+    </style>
+-->
+    <!--Creamos los-->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--comentarios -->
+<!--Etiquetas de texto -->
+<!--Encabezados
+h1, h2, h3, h4, h5, h6
+Sirven para crear titulos y subtitulos,encabezados-->
+<!--h1 se ecribe una sola vez en cada pagina,el resto se pueden escribir las veces que necesitemos-->
+<h1 id="post-title">Mi primera web</h1>
+<!--Aplicando estilos en linea,van dentro de laa etiqueta de apertura del elemento html-->
+<h2 id="post-subtitle" style="background-color: blue;" >Si puedes imaginarlo y sonarlo,puedes crearlo y programarlo</h2>
+<h3>Esto es un h3</h3>
+
+<!--Parrafos (p) -->
+</p class="description"
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam corporis nostrum tempore ratione corrupti sunt provident dolorum, est iure et quae? Eos est quae sapiente, ea tempora veritatis excepturi maiores? >
+</p>
+
+<!--Dar importancia a contenido de tipo texto -->
+<p>
+Dentro de este parrafo <strong> este texto es importante</strong>
+</p>
+
+<p>
+En este parrafo <em> el texto en italica es importante</em> tambien
+</p>
+
+<!-- Enlaces -->
+<a href="https://www.atigra.es" target="_blank">Enlace a la web de Atigra</a
+>
+
+<!--Imagenes -->
+<!-- Imagenes externas -->
+<img src="https://images.pexels.com/photos/7829101/pexels-photo-7829101.jpeg" alt="Yoda en la sombra" width="305px"
+/>
+
+<!-- Imagenes locales-->
+<img src="img/Baby Yoga.jpg" alt="Baby Yoga en la arena" width="270px" />
+
+<!-- Listas -->
+<!-- Desordenada-->
+<h3> Lista desordenada</h3>
+<ul>   
+<li>Luke Skywalker</li>
+<li>Anakon Skywalker</li>
+<li>Drake</li>
+<li>Muci</li>
+<li>Limanu</li>
+</ul>
+
+<!-- Ordenadas -->
+<ol> 
+    <li> Halcon Milenario</li>
+    <li>X-wing </li>
+    <li>Drake</li>
+    <li>tatau</li>
+    <li>Muci</li>
+</ol>
+
+<!-- Atributos globales-->
+<!--
+Atributo id
+Sintaxis: <open_label id="id-unico">
+
+Descripcion: Generamos una unica identidad al elemento html para dirigiros directamente a el.Puedes ser desde CSS,Javascript,etc...
+
+Atributo class
+Sintaxis: <open_tabel class="name_of_class"
+
+Descripcion:es un identificador de grupo,se puede especificar el mismo nombre a varios elementos o grupo de elementos.Ideal para dar estilos de forma uniforme o asignarle cambios desde un script.
+-->
+
+<!--Esteructuracion del contenido-->
+<!--Contenedores-->
+
+<!--
+div-Contenedor de almacenamiento para agrupar bloques de contenido
+-->
+<div class="article">
+<div class="figure">
+<img src="img/Baby Yoga.jpg" alt="Aqui va una imagen" width="150px"/>
+</div>
+<h3> Titulo de post</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam cum error autem porro magnam necessitatibus a molestiae totam mollitia, maxime facilis veniam. Provident in delectus voluptatibus incidunt tempore ut!
+</p>
+</div>
+
+<!--
+span- se usa para los detalles,agrupa contenido en linea dentro de otros elementos.Sirve para aplicar estilos a fragmentos de texto o pequenos componentes sin alterar el flujo del documento
+-->
+
+<p> Esto es un <span class="texto-destacado"> texto destacado</span> dentro de un parrafo.
+</p>
+
+
+<!--HTML semantico-->
+<header>
+<figure id="logo">
+<img src="" alt="Logo" />
+</figure>
+<nav>
+<ul>
+<li>Home</li>
+<li>Blog</li>
+<li>About us</li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="hero">
+<figure id="hero-background">
+<img src="" alt="Background hero">
+</figure>
+
+<div class="hero-text">
+<h1>Titulo de la pagina </h1>
+<h2>Subtitulo de la pagina</h2>
+<button>Enviar</button>
+</div>
+</section>
+
+<section id="blog">
+<article>
+<figure>
+<img src="" alt="image article">
+</figure>
+<h3>Titulo del post</h3>
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, voluptates ab repudiandae ducimus aspernatur cupiditate! Voluptate natus nobis amet iusto perferendis libero aperiam, accusantium omnis a quo. Quaerat, voluptates sint!
+</p>
+</article>
+</section>
+</main>
+<footer>
+<div id="left">
+<h4>Suscribete</h4>
+</div>
+<div id="right">
+<ul>
+<li>Github</li>
+<li>Instagram</li>
+</ul>
+</div>
+</footer>
+
+<!-- Formularios -->
+
+<h3> Formulario</h3>
+<form action="script.js" method="post">
+    <label for="name">Nombre: </label>
+    <input type="text" id="name" name="name" placeholder="Escribe tu nombre"/>
+    
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email"  placeholder="Escribe tu email"/>
+
+    <label for="password">Contrasena: </label>
+    <input type="password" id="password" name="password" placeholder="Escribe tu password" />
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+
+</form>
+</body>
+</html>

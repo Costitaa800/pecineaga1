@@ -1,0 +1,79 @@
+/* Estilos principales */
+
+html{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 16px;
+    background-color: lightcyan;
+}
+
+/* Medidas absolutas */
+/* Son medidas fijas,no cambian. Ejemplo: px, cm, mm, in, ...*/
+
+.box-px {
+    width: 200px;
+}
+
+/* Medidas relativas */
+/* Son medidas que cambian en relacion a algun elemento, normalmente el elemento padre */
+.box-percent {
+    width: 50%;
+}
+
+/* rem */
+/* Es relativo al tamano de la fuente del elemento raiz (etiqueta html) configurado por defecto.
+
+html {
+font-size: 16px;
+}
+
+1rem == 16 px
+2rem == 32 px
+1.5 rem == 24 px
+*/ 
+.box-rem {
+    width:15rem; 
+}
+
+/* em */
+/* Medida relativa al font-size deñ elemento padre Por ejemplo:
+
+.box-container{
+    font-size: 20px;
+}
+
+1em ==20px
+2em ==40px
+1.2 ==24px
+*/
+
+.box-em {
+    font-size: 25px;
+    width: 3em;
+
+}
+
+/* viewport width */
+/* Medida relativa al ancho del viewport (ventana) Por ejemplo: viewport width ==1000px
+10vw == 10% del viewport == 100px
+*/
+
+.box-vw {
+    width: 30vw;
+}
+
+/* viewport height */
+.box-vh {
+    height: 20vh;
+}

@@ -1,0 +1,46 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* DISPLAY FLEX */
+.container {
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    display: flex ;
+}
+
+.item {
+    width: 100px;
+    background-color: #3498cb;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Flex direction column */
+.column {
+    flex-direction: column;
+}
+
+/* Centrado en el eje horizontal */
+
+.center{
+    justify-content: center;
+}
+
+/* Centrado en el eje vertical */
+/* Alineacion de elementos */
+.small{
+    height: 100px;
+}
+
+.align{
+    align-items: center;
+}

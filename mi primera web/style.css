@@ -1,0 +1,29 @@
+/* Comentarios en CSS */
+/* Aplicando estilos */
+
+/* Sintaxis
+  Selector {
+      propiedad: valor;
+      propiedad: valor;
+     }
+*/
+
+/* Buenas practicas a la hora de aplicar estilos:Comenzamos desde el primer elemento html hacia abajo y de izquierda a derecha.
+*/
+
+h1 {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    padding: 5px;
+    }
+    h3{
+        background-color: greenyellow;
+        color: black;
+    }
+
+    p {
+        font-style: italic;
+        color: chocolate;
+    }
+    
